@@ -1,0 +1,8 @@
+{
+	"SourceFiles": [
+		"C:\\Users\\cheng\\source\\repos\\ue4\\Battery_Collector\\Source\\Battery_Collector\\Battery_Collector.Build.cs",
+		"C:\\Users\\cheng\\source\\repos\\ue4\\Battery_Collector\\Source\\Battery_Collector.Target.cs",
+		"C:\\Users\\cheng\\source\\repos\\ue4\\Battery_Collector\\Source\\Battery_CollectorEditor.Target.cs"
+	],
+	"EngineVersion": "4.27.1"
+}

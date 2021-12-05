@@ -1,0 +1,3 @@
+C:\Users\cheng\source\repos\ue4\Battery_Collector\Intermediate\Build\Win64\UE4Editor\Development\Battery_Collector\Definitions.Battery_Collector.h
+C:\Program Files\Epic Games\UE_4.27\Engine\Source\Runtime\CoreUObject\Public\UObject/GeneratedCppIncludes.h
+C:\Program Files\Epic Games\UE_4.27\Engine\Source\Runtime\CoreUObject\Public\UObject/MetaData.h

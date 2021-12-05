@@ -1,0 +1,14 @@
+{
+	"Targets": [
+		{
+			"Name": "Battery_Collector",
+			"Path": "C:\\Users\\cheng\\source\\repos\\ue4\\Battery_Collector\\Source\\Battery_Collector.Target.cs",
+			"Type": "Game"
+		},
+		{
+			"Name": "Battery_CollectorEditor",
+			"Path": "C:\\Users\\cheng\\source\\repos\\ue4\\Battery_Collector\\Source\\Battery_CollectorEditor.Target.cs",
+			"Type": "Editor"
+		}
+	]
+}
