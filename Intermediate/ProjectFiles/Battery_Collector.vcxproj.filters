@@ -32,38 +32,45 @@
     <Filter Include="Source\Battery_Collector">
       <UniqueIdentifier>{7AA179FD-E6CD-4DF8-93E1-587F6B29AC6C}</UniqueIdentifier>
     </Filter>
-    <ClCompile Include="..\..\Source\Battery_Collector\BatteryMan.cpp">
-      <Filter>Source\Battery_Collector</Filter>
-    </ClCompile>
-    <ClInclude Include="..\..\Source\Battery_Collector\BatteryMan.h">
-      <Filter>Source\Battery_Collector</Filter>
-    </ClInclude>
-    <ClCompile Include="..\..\Source\Battery_Collector\BatteryMan_GameMode.cpp">
-      <Filter>Source\Battery_Collector</Filter>
-    </ClCompile>
-    <ClInclude Include="..\..\Source\Battery_Collector\BatteryMan_GameMode.h">
-      <Filter>Source\Battery_Collector</Filter>
-    </ClInclude>
     <None Include="..\..\Source\Battery_Collector\Battery_Collector.Build.cs">
       <Filter>Source\Battery_Collector</Filter>
     </None>
-    <ClCompile Include="..\..\Source\Battery_Collector\Battery_Collector.cpp">
-      <Filter>Source\Battery_Collector</Filter>
-    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
     <ClInclude Include="..\..\Source\Battery_Collector\Battery_Collector.h">
       <Filter>Source\Battery_Collector</Filter>
     </ClInclude>
-    <ClCompile Include="..\..\Source\Battery_Collector\Battery_CollectorCharacter.cpp">
-      <Filter>Source\Battery_Collector</Filter>
-    </ClCompile>
     <ClInclude Include="..\..\Source\Battery_Collector\Battery_CollectorCharacter.h">
       <Filter>Source\Battery_Collector</Filter>
     </ClInclude>
-    <ClCompile Include="..\..\Source\Battery_Collector\Battery_CollectorGameMode.cpp">
-      <Filter>Source\Battery_Collector</Filter>
-    </ClCompile>
     <ClInclude Include="..\..\Source\Battery_Collector\Battery_CollectorGameMode.h">
       <Filter>Source\Battery_Collector</Filter>
     </ClInclude>
+    <ClInclude Include="..\..\Source\Battery_Collector\BatteryMan.h">
+      <Filter>Source\Battery_Collector</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Source\Battery_Collector\BatteryMan_GameMode.h">
+      <Filter>Source\Battery_Collector</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\Source\Battery_Collector\Battery_Collector.cpp">
+      <Filter>Source\Battery_Collector</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\Battery_Collector\Battery_CollectorCharacter.cpp">
+      <Filter>Source\Battery_Collector</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\Battery_Collector\Battery_CollectorGameMode.cpp">
+      <Filter>Source\Battery_Collector</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\Battery_Collector\BatteryMan.cpp">
+      <Filter>Source\Battery_Collector</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\Battery_Collector\BatteryMan_GameMode.cpp">
+      <Filter>Source\Battery_Collector</Filter>
+    </ClCompile>
+    <ClCompile Include="Battery_Collector_Test.cpp">
+      <Filter>Source\Battery_Collector</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>

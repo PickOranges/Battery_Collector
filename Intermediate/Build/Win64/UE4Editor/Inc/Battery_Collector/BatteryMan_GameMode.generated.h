@@ -36,7 +36,7 @@ public: \
 
 #define Battery_Collector_Source_Battery_Collector_BatteryMan_GameMode_h_15_STANDARD_CONSTRUCTORS \
 	/** Standard constructor, called after all reflected properties have been initialized */ \
-	NO_API ABatteryMan_GameMode(const FObjectInitializer& ObjectInitializer = FObjectInitializer::Get()); \
+	NO_API ABatteryMan_GameMode(const FObjectInitializer& ObjectInitializer); \
 	DEFINE_DEFAULT_OBJECT_INITIALIZER_CONSTRUCTOR_CALL(ABatteryMan_GameMode) \
 	DECLARE_VTABLE_PTR_HELPER_CTOR(NO_API, ABatteryMan_GameMode); \
 	DEFINE_VTABLE_PTR_HELPER_CTOR_CALLER(ABatteryMan_GameMode); \
@@ -48,8 +48,6 @@ public:
 
 
 #define Battery_Collector_Source_Battery_Collector_BatteryMan_GameMode_h_15_ENHANCED_CONSTRUCTORS \
-	/** Standard constructor, called after all reflected properties have been initialized */ \
-	NO_API ABatteryMan_GameMode(const FObjectInitializer& ObjectInitializer = FObjectInitializer::Get()) : Super(ObjectInitializer) { }; \
 private: \
 	/** Private move- and copy-constructors, should never be used */ \
 	NO_API ABatteryMan_GameMode(ABatteryMan_GameMode&&); \
@@ -57,10 +55,17 @@ private: \
 public: \
 	DECLARE_VTABLE_PTR_HELPER_CTOR(NO_API, ABatteryMan_GameMode); \
 	DEFINE_VTABLE_PTR_HELPER_CTOR_CALLER(ABatteryMan_GameMode); \
-	DEFINE_DEFAULT_OBJECT_INITIALIZER_CONSTRUCTOR_CALL(ABatteryMan_GameMode)
+	DEFINE_DEFAULT_CONSTRUCTOR_CALL(ABatteryMan_GameMode)
 
 
-#define Battery_Collector_Source_Battery_Collector_BatteryMan_GameMode_h_15_PRIVATE_PROPERTY_OFFSET
+#define Battery_Collector_Source_Battery_Collector_BatteryMan_GameMode_h_15_PRIVATE_PROPERTY_OFFSET \
+	FORCEINLINE static uint32 __PPO__PlayerRecharge() { return STRUCT_OFFSET(ABatteryMan_GameMode, PlayerRecharge); } \
+	FORCEINLINE static uint32 __PPO__Spawn_X_Min() { return STRUCT_OFFSET(ABatteryMan_GameMode, Spawn_X_Min); } \
+	FORCEINLINE static uint32 __PPO__Spawn_X_Max() { return STRUCT_OFFSET(ABatteryMan_GameMode, Spawn_X_Max); } \
+	FORCEINLINE static uint32 __PPO__Spawn_Y_Min() { return STRUCT_OFFSET(ABatteryMan_GameMode, Spawn_Y_Min); } \
+	FORCEINLINE static uint32 __PPO__Spawn_Y_Max() { return STRUCT_OFFSET(ABatteryMan_GameMode, Spawn_Y_Max); }
+
+
 #define Battery_Collector_Source_Battery_Collector_BatteryMan_GameMode_h_12_PROLOG
 #define Battery_Collector_Source_Battery_Collector_BatteryMan_GameMode_h_15_GENERATED_BODY_LEGACY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \

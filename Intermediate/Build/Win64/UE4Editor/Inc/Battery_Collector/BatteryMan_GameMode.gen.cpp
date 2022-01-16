@@ -17,6 +17,8 @@ void EmptyLinkFunctionForGeneratedCodeBatteryMan_GameMode() {}
 	BATTERY_COLLECTOR_API UClass* Z_Construct_UClass_ABatteryMan_GameMode();
 	ENGINE_API UClass* Z_Construct_UClass_AGameMode();
 	UPackage* Z_Construct_UPackage__Script_Battery_Collector();
+	COREUOBJECT_API UClass* Z_Construct_UClass_UClass();
+	ENGINE_API UClass* Z_Construct_UClass_APawn_NoRegister();
 // End Cross Module References
 	void ABatteryMan_GameMode::StaticRegisterNativesABatteryMan_GameMode()
 	{
@@ -31,6 +33,27 @@ void EmptyLinkFunctionForGeneratedCodeBatteryMan_GameMode() {}
 #if WITH_METADATA
 		static const UE4CodeGen_Private::FMetaDataPairParam Class_MetaDataParams[];
 #endif
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_PlayerRecharge_MetaData[];
+#endif
+		static const UE4CodeGen_Private::FClassPropertyParams NewProp_PlayerRecharge;
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_Spawn_X_Min_MetaData[];
+#endif
+		static const UE4CodeGen_Private::FFloatPropertyParams NewProp_Spawn_X_Min;
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_Spawn_X_Max_MetaData[];
+#endif
+		static const UE4CodeGen_Private::FFloatPropertyParams NewProp_Spawn_X_Max;
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_Spawn_Y_Min_MetaData[];
+#endif
+		static const UE4CodeGen_Private::FFloatPropertyParams NewProp_Spawn_Y_Min;
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_Spawn_Y_Max_MetaData[];
+#endif
+		static const UE4CodeGen_Private::FFloatPropertyParams NewProp_Spawn_Y_Max;
+		static const UE4CodeGen_Private::FPropertyParamsBase* const PropPointers[];
 		static const FCppClassTypeInfoStatic StaticCppClassTypeInfo;
 		static const UE4CodeGen_Private::FClassParams ClassParams;
 	};
@@ -40,13 +63,60 @@ void EmptyLinkFunctionForGeneratedCodeBatteryMan_GameMode() {}
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_ABatteryMan_GameMode_Statics::Class_MetaDataParams[] = {
-		{ "Comment", "/**\n * \n */" },
+		{ "Comment", "/**\n * GameMode will decide which character is our default character.\n */" },
 		{ "HideCategories", "Info Rendering MovementReplication Replication Actor Input Movement Collision Rendering Utilities|Transformation" },
 		{ "IncludePath", "BatteryMan_GameMode.h" },
 		{ "ModuleRelativePath", "BatteryMan_GameMode.h" },
 		{ "ShowCategories", "Input|MouseInput Input|TouchInput" },
+		{ "ToolTip", "GameMode will decide which character is our default character." },
 	};
 #endif
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_ABatteryMan_GameMode_Statics::NewProp_PlayerRecharge_MetaData[] = {
+		{ "Category", "BatteryMan_GameMode" },
+		{ "Comment", "/// <summary>\n/// We want to spawn our battery chargers.\n/// How to use it in UE4?\n/// Go to the gamemode blueprint->battery man game mode->recharger->select pickable item BP.\n/// Then pass the min max of x and y into gamemode blueprint.(Those params can be obtained by measuring the limit of the wall)\n/// </summary>\n" },
+		{ "ModuleRelativePath", "BatteryMan_GameMode.h" },
+		{ "ToolTip", "<summary>\nWe want to spawn our battery chargers.\nHow to use it in UE4?\nGo to the gamemode blueprint->battery man game mode->recharger->select pickable item BP.\nThen pass the min max of x and y into gamemode blueprint.(Those params can be obtained by measuring the limit of the wall)\n</summary>" },
+	};
+#endif
+	const UE4CodeGen_Private::FClassPropertyParams Z_Construct_UClass_ABatteryMan_GameMode_Statics::NewProp_PlayerRecharge = { "PlayerRecharge", nullptr, (EPropertyFlags)0x0044000000000001, UE4CodeGen_Private::EPropertyGenFlags::Class, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(ABatteryMan_GameMode, PlayerRecharge), Z_Construct_UClass_APawn_NoRegister, Z_Construct_UClass_UClass, METADATA_PARAMS(Z_Construct_UClass_ABatteryMan_GameMode_Statics::NewProp_PlayerRecharge_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_ABatteryMan_GameMode_Statics::NewProp_PlayerRecharge_MetaData)) };
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_ABatteryMan_GameMode_Statics::NewProp_Spawn_X_Min_MetaData[] = {
+		{ "Category", "BatteryMan_GameMode" },
+		{ "Comment", "// the spawn height\n" },
+		{ "ModuleRelativePath", "BatteryMan_GameMode.h" },
+		{ "ToolTip", "the spawn height" },
+	};
+#endif
+	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UClass_ABatteryMan_GameMode_Statics::NewProp_Spawn_X_Min = { "Spawn_X_Min", nullptr, (EPropertyFlags)0x0040000000000001, UE4CodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(ABatteryMan_GameMode, Spawn_X_Min), METADATA_PARAMS(Z_Construct_UClass_ABatteryMan_GameMode_Statics::NewProp_Spawn_X_Min_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_ABatteryMan_GameMode_Statics::NewProp_Spawn_X_Min_MetaData)) };
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_ABatteryMan_GameMode_Statics::NewProp_Spawn_X_Max_MetaData[] = {
+		{ "Category", "BatteryMan_GameMode" },
+		{ "ModuleRelativePath", "BatteryMan_GameMode.h" },
+	};
+#endif
+	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UClass_ABatteryMan_GameMode_Statics::NewProp_Spawn_X_Max = { "Spawn_X_Max", nullptr, (EPropertyFlags)0x0040000000000001, UE4CodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(ABatteryMan_GameMode, Spawn_X_Max), METADATA_PARAMS(Z_Construct_UClass_ABatteryMan_GameMode_Statics::NewProp_Spawn_X_Max_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_ABatteryMan_GameMode_Statics::NewProp_Spawn_X_Max_MetaData)) };
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_ABatteryMan_GameMode_Statics::NewProp_Spawn_Y_Min_MetaData[] = {
+		{ "Category", "BatteryMan_GameMode" },
+		{ "ModuleRelativePath", "BatteryMan_GameMode.h" },
+	};
+#endif
+	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UClass_ABatteryMan_GameMode_Statics::NewProp_Spawn_Y_Min = { "Spawn_Y_Min", nullptr, (EPropertyFlags)0x0040000000000001, UE4CodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(ABatteryMan_GameMode, Spawn_Y_Min), METADATA_PARAMS(Z_Construct_UClass_ABatteryMan_GameMode_Statics::NewProp_Spawn_Y_Min_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_ABatteryMan_GameMode_Statics::NewProp_Spawn_Y_Min_MetaData)) };
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_ABatteryMan_GameMode_Statics::NewProp_Spawn_Y_Max_MetaData[] = {
+		{ "Category", "BatteryMan_GameMode" },
+		{ "ModuleRelativePath", "BatteryMan_GameMode.h" },
+	};
+#endif
+	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UClass_ABatteryMan_GameMode_Statics::NewProp_Spawn_Y_Max = { "Spawn_Y_Max", nullptr, (EPropertyFlags)0x0040000000000001, UE4CodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(ABatteryMan_GameMode, Spawn_Y_Max), METADATA_PARAMS(Z_Construct_UClass_ABatteryMan_GameMode_Statics::NewProp_Spawn_Y_Max_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_ABatteryMan_GameMode_Statics::NewProp_Spawn_Y_Max_MetaData)) };
+	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UClass_ABatteryMan_GameMode_Statics::PropPointers[] = {
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ABatteryMan_GameMode_Statics::NewProp_PlayerRecharge,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ABatteryMan_GameMode_Statics::NewProp_Spawn_X_Min,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ABatteryMan_GameMode_Statics::NewProp_Spawn_X_Max,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ABatteryMan_GameMode_Statics::NewProp_Spawn_Y_Min,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ABatteryMan_GameMode_Statics::NewProp_Spawn_Y_Max,
+	};
 	const FCppClassTypeInfoStatic Z_Construct_UClass_ABatteryMan_GameMode_Statics::StaticCppClassTypeInfo = {
 		TCppClassTypeTraits<ABatteryMan_GameMode>::IsAbstract,
 	};
@@ -56,11 +126,11 @@ void EmptyLinkFunctionForGeneratedCodeBatteryMan_GameMode() {}
 		&StaticCppClassTypeInfo,
 		DependentSingletons,
 		nullptr,
-		nullptr,
+		Z_Construct_UClass_ABatteryMan_GameMode_Statics::PropPointers,
 		nullptr,
 		UE_ARRAY_COUNT(DependentSingletons),
 		0,
-		0,
+		UE_ARRAY_COUNT(Z_Construct_UClass_ABatteryMan_GameMode_Statics::PropPointers),
 		0,
 		0x009002ACu,
 		METADATA_PARAMS(Z_Construct_UClass_ABatteryMan_GameMode_Statics::Class_MetaDataParams, UE_ARRAY_COUNT(Z_Construct_UClass_ABatteryMan_GameMode_Statics::Class_MetaDataParams))
@@ -74,7 +144,7 @@ void EmptyLinkFunctionForGeneratedCodeBatteryMan_GameMode() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(ABatteryMan_GameMode, 329271645);
+	IMPLEMENT_CLASS(ABatteryMan_GameMode, 208250004);
 	template<> BATTERY_COLLECTOR_API UClass* StaticClass<ABatteryMan_GameMode>()
 	{
 		return ABatteryMan_GameMode::StaticClass();
