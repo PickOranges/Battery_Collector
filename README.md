@@ -1,5 +1,5 @@
 # Battery_Collector
-This is a very simple game for learning purpose. The following logics are implemented:
+This is a simple game for learning purpose. The following logics are implemented:
 ## 1. 3C
 This is a 3rd person action game. Players can control the character via mouse and keyboard AWSD and SPACE. The goal is to collect as many batteries as you can in a limited time interval. The batteries are dropped at random positions in the scene.
 
