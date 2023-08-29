@@ -2,6 +2,7 @@
 This is a very simple game for learning purpose. The following logics are implemented:
 ## 1. 3C
 This is a 3rd person action game. Players can control the character via mouse and keyboard AWSD and SPACE. The goal is to collect as many batteries as you can in a limited time interval. The batteries are dropped at random positions in the scene.
+
   ![Screenshot (2310)](https://github.com/PickOranges/Battery_Collector/assets/55946962/87ea5859-f1f7-441d-b723-88d746191b53)
   
   ![Screenshot (2311)](https://github.com/PickOranges/Battery_Collector/assets/55946962/7f8897fb-bb71-4caf-a2d9-2a2b7711edcd)
